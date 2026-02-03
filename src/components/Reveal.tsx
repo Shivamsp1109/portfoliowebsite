@@ -11,7 +11,7 @@ type RevealProps = {
 
 export default function Reveal({ children, className, delay = 0 }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { amount: 0.24, once: false });
+  const isInView = useInView(ref, { amount: 0.08, once: false, margin: "0px 0px -10% 0px" });
 
   return (
     <motion.div
