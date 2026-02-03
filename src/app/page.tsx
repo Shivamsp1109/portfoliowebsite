@@ -2,6 +2,9 @@ import { ContactForm } from "@/components/ContactForm";
 import HeroScene from "@/components/HeroScene";
 import Image from "next/image";
 
+const gmailComposeLink =
+  "https://mail.google.com/mail/?view=cm&fs=1&to=shivam.sp1109%40gmail.com&su=Regarding&body=Dear%20Shivam%2C%0AI%20came%20across%20your%20portfolio%20and%20resume.%0A%0A%0A%0ARegards%2C";
+
 const experience = [
   {
     period: "Jun 2025 - Present",
@@ -208,7 +211,9 @@ export default function Home() {
               </a>
               <a
                 className="contact-link"
-                href="mailto:shivam.sp1109@gmail.com?subject=Regarding&body=Dear%20Shivam%2C%0AI%20came%20across%20your%20portfolio%20and%20resume.%0A%0A%0A%0ARegards%2C"
+                href={gmailComposeLink}
+                target="_blank"
+                rel="noreferrer"
               >
                 shivam.sp1109@gmail.com
               </a>

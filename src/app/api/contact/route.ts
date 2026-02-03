@@ -3,8 +3,8 @@ import { NextResponse } from "next/server";
 type ContactPayload = {
   name?: string;
   email?: string;
+  subject?: string;
   message?: string;
-  company?: string;
 };
 
 const MAX_MESSAGE_LENGTH = 2000;
@@ -19,14 +19,10 @@ export async function POST(request: Request) {
 
     const name = body.name?.trim() ?? "";
     const email = body.email?.trim() ?? "";
+    const subject = body.subject?.trim() ?? "";
     const message = body.message?.trim() ?? "";
-    const company = body.company?.trim() ?? "";
 
-    if (company) {
-      return NextResponse.json({ message: "Invalid submission" }, { status: 400 });
-    }
-
-    if (!name || !email || !message) {
+    if (!name || !email || !subject || !message) {
       return NextResponse.json({ message: "Please fill all fields." }, { status: 400 });
     }
 
@@ -65,8 +61,8 @@ export async function POST(request: Request) {
         from: fromEmail,
         to: [toEmail],
         reply_to: email,
-        subject: `Portfolio Contact: ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+        subject: `Portfolio Contact - ${subject}`,
+        text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
       }),
     });
 

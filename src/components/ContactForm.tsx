@@ -5,15 +5,15 @@ import { FormEvent, useState } from "react";
 type FormState = {
   name: string;
   email: string;
+  subject: string;
   message: string;
-  company: string;
 };
 
 const initialState: FormState = {
   name: "",
   email: "",
+  subject: "",
   message: "",
-  company: "",
 };
 
 export function ContactForm() {
@@ -69,14 +69,13 @@ export function ContactForm() {
           placeholder="you@example.com"
         />
       </label>
-      <label className="hidden">
-        Company
+      <label>
+        Subject
         <input
-          tabIndex={-1}
-          autoComplete="off"
-          value={form.company}
-          onChange={(event) => setForm((prev) => ({ ...prev, company: event.target.value }))}
-          placeholder="Leave blank"
+          required
+          value={form.subject}
+          onChange={(event) => setForm((prev) => ({ ...prev, subject: event.target.value }))}
+          placeholder="Regarding..."
         />
       </label>
       <label>
