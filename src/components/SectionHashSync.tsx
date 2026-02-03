@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const sectionIds = ["home", "about", "experience", "projects", "skills", "contact"] as const;
+const sectionIds = ["home", "about", "experience", "projects", "research", "skills", "contact"] as const;
 
 export default function SectionHashSync() {
   useEffect(() => {

@@ -9,6 +9,7 @@ import Image from "next/image";
 
 const gmailComposeLink =
   "https://mail.google.com/mail/?view=cm&fs=1&to=shivam.sp1109%40gmail.com&su=Regarding&body=Dear%20Shivam%2C%0AI%20came%20across%20your%20portfolio%20and%20resume.%0A%0A%0A%0ARegards%2C";
+const researchPaperLink = "https://ieeexplore.ieee.org/document/10985348";
 
 const experience = [
   {
@@ -108,7 +109,7 @@ export default function Home() {
           <span>Shivam</span>
         </a>
         <nav className="hidden gap-6 text-sm md:flex">
-          {["about", "experience", "projects", "skills", "contact"].map((item) => (
+          {["about", "experience", "projects", "research", "skills", "contact"].map((item) => (
             <a key={item} href={`#${item}`} className="nav-link">
               {item}
             </a>
@@ -199,6 +200,29 @@ export default function Home() {
         </Reveal>
 
         <Reveal delay={0.1}>
+          <section id="research" className="panel">
+            <p className="eyebrow">Research</p>
+            <h2 className="section-title">Published Research Paper</h2>
+            <TiltCard className="mt-4 card card-3d">
+              <h3 className="text-xl font-semibold text-[var(--text-main)]">
+                On Enhancing Electric Vehicle Ecosystem in Urban Scenario
+              </h3>
+              <p className="mt-3 text-[var(--text-muted)]">
+                Access the published paper on IEEE Xplore, or download the PDF directly.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a className="btn btn-primary text-sm" href={researchPaperLink} target="_blank" rel="noreferrer">
+                  View
+                </a>
+                <a className="btn btn-secondary text-sm" href="/EV_project.pdf" download>
+                  Download PDF
+                </a>
+              </div>
+            </TiltCard>
+          </section>
+        </Reveal>
+
+        <Reveal delay={0.11}>
           <section id="skills" className="panel">
             <p className="eyebrow">Skills</p>
             <h2 className="section-title">Tech Stack & Skills</h2>
@@ -212,7 +236,7 @@ export default function Home() {
           </section>
         </Reveal>
 
-        <Reveal delay={0.12}>
+        <Reveal delay={0.13}>
           <section id="contact" className="panel">
             <p className="eyebrow">Contact</p>
             <h2 className="section-title">Let us build something impactful.</h2>
