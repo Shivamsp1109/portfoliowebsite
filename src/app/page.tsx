@@ -205,10 +205,10 @@ export default function Home() {
             <h2 className="section-title">Published Research Paper</h2>
             <TiltCard className="mt-4 card card-3d">
               <h3 className="text-xl font-semibold text-[var(--text-main)]">
-                On Enhancing Electric Vehicle Ecosystem in Urban Scenario
+                On Enhancing Electric Vehicle Ecosystem in Urban Scenario - 2nd Best Paper
               </h3>
               <p className="mt-3 text-[var(--text-muted)]">
-                Access the published paper on IEEE Xplore, or download the PDF directly.
+                Access the award winning published paper on IEEE Xplore, or download the PDF directly.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <a className="btn btn-primary text-sm" href={researchPaperLink} target="_blank" rel="noreferrer">
@@ -265,3 +265,4 @@ export default function Home() {
     </div>
   );
 }
+
