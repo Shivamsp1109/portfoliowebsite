@@ -6,10 +6,10 @@ export default function ResumePage() {
         <h1 className="section-title">Shivam Kumar Pandey - Software Developer</h1>
         <p className="mt-6 text-[var(--text-muted)]">View my resume below or download it directly.</p>
         <div className="mt-5 flex flex-wrap gap-3">
-          <a className="btn btn-primary text-sm" href="/ShivamKumarPandey.pdf" target="_blank" rel="noreferrer">
+          <a className="btn btn-primary text-sm" href="/ShivamKP.pdf" target="_blank" rel="noreferrer">
             Open PDF
           </a>
-          <a className="btn btn-secondary min-w-[190px] px-6 text-sm" href="/ShivamKumarPandey.pdf" download>
+          <a className="btn btn-secondary min-w-[190px] px-6 text-sm" href="/ShivamKP.pdf" download>
             Download Resume
           </a>
         </div>
