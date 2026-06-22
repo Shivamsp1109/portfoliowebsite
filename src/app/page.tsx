@@ -17,7 +17,7 @@ const experience = [
     title: "Software Developer Engineer",
     company: "Rayole Software (Remote)",
     details:
-      "Published 7 Android apps used by 400k+ users, integrated native plugins, analyzed user postbacks, and built in-app AI models trained from user interactions.",
+      "Published 12 Android apps used by 1.48M+ users, integrated native plugins, analyzed user postbacks, and built in-app AI models trained from user interactions.",
   },
   {
     period: "Jan 2025 - May 2025",
@@ -44,18 +44,18 @@ const experience = [
 
 const projects = [
   {
+    name: "IntelSpend",
+    description:
+      "Built an offline-first expense tracking platform with real-time analytics, smart budgeting, and seamless cloud synchronization for personal finance management.",
+    tech: "Kotlin, Compose, MVVM, Hilt, Room, MySQL",
+    link: "https://github.com/Shivamsp1109/IntelSpend",
+  },
+  {
     name: "Explainable Visual Risk Analysis for Construction Sites",
     description:
       "Built an explainable computer-vision system using YOLO object detection with geometry-based reasoning and rule-driven safety risk assessment for Construction site workers.",
     tech: "Python, OpenCV, YOLOv8s, Node.js, Express, React",
     link: "https://github.com/Shivamsp1109/Explainable-Visual-Risk-Analysis-System-EVRAS-for-Construction-Safety",
-  },
-  {
-    name: "AR Chat",
-    description:
-      "Created immersive 3D chat interactions with emotion-aware avatars, combining computer vision with real-time AR communication.",
-    tech: "React.js, Unity, C#, Photon Networking, OpenCV",
-    link: "https://github.com/sid142003/ARchat/tree/main",
   },
 ];
 
@@ -63,6 +63,7 @@ const skills = [
   "Python",
   "Java",
   "C#.NET",
+  "Kotlin",
   "AI/ML",
   "Computer Vision",
   "LLMs",
@@ -75,6 +76,7 @@ const skills = [
   "React.js",
   "Node.js",
   "Express.js",
+  "Typescript",
   "MySQL",
   "PostgreSQL",
   "MongoDB",
@@ -85,6 +87,8 @@ const skills = [
   "Git & GitHub",
   "Data Analytics",
   "DSA",
+  "System Design",
+  "OOPS",
 ];
 
 export default function Home() {

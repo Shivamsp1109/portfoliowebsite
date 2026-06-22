@@ -17,7 +17,7 @@ export default function ResumePage() {
         <div className="mt-8 overflow-hidden rounded-xl border border-[var(--line)] bg-white">
           <iframe
             title="Shivam Resume"
-            src="/ShivamKumarPandey.pdf#view=FitH"
+            src="/ShivamKP.pdf#view=FitH"
             className="h-[72vh] w-full"
           />
         </div>
